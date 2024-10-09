@@ -1,0 +1,89 @@
+{
+  "election": {
+    "election_id": "2024_Election_01",
+    "name": "2024 National Elections",
+    "start_date": "2024-11-01",
+    "end_date": "2024-11-07",
+    "status": "ongoing"
+  },
+  "users": [
+    {
+      "user_id": "USR001",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "role": "voter",
+      "voted": false
+    },
+    {
+      "user_id": "USR002",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "role": "admin",
+      "voted": false
+    },
+    {
+      "user_id": "USR003",
+      "name": "Emily Johnson",
+      "email": "emily.johnson@example.com",
+      "role": "voter",
+      "voted": true
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "CND001",
+      "name": "Alice Brown",
+      "party": "Green Party",
+      "votes_received": 1000
+    },
+    {
+      "candidate_id": "CND002",
+      "name": "Bob White",
+      "party": "Blue Party",
+      "votes_received": 1200
+    },
+    {
+      "candidate_id": "CND003",
+      "name": "Charlie Black",
+      "party": "Red Party",
+      "votes_received": 800
+    }
+  ],
+  "votes": [
+    {
+      "vote_id": "VOTE001",
+      "user_id": "USR001",
+      "candidate_id": "CND001",
+      "timestamp": "2024-11-01T09:30:00Z"
+    },
+    {
+      "vote_id": "VOTE002",
+      "user_id": "USR003",
+      "candidate_id": "CND002",
+      "timestamp": "2024-11-01T10:00:00Z"
+    }
+  ],
+  "results": {
+    "election_id": "2024_Election_01",
+    "total_votes": 3000,
+    "votes_per_candidate": [
+      {
+        "candidate_id": "CND001",
+        "votes_received": 1000
+      },
+      {
+        "candidate_id": "CND002",
+        "votes_received": 1200
+      },
+      {
+        "candidate_id": "CND003",
+        "votes_received": 800
+      }
+    ],
+    "winner": {
+      "candidate_id": "CND002",
+      "name": "Bob White",
+      "party": "Blue Party"
+    }
+  }
+}
